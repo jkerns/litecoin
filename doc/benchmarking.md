@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Litecoin Core has an internal benchmarking framework, with benchmarks
+Nebulacoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling litecoin-core, the benchmarks can be run with:
-`src/bench/bench_litecoin`
+After compiling nebulacoin-core, the benchmarks can be run with:
+`src/bench/bench_nebulacoin`
 
 The output will look similar to:
 ```
