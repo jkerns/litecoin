@@ -101,7 +101,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000002ebcfe2dd9eff82666");
+        consensus.nMinimumChainWork = uint256S("0x0");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x59c9b9d3fec105bdc716d84caa7579503d5b05b73618d0bf2d5fa639f780a011"); //1353397
@@ -118,9 +118,9 @@ public:
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1522545042, 1763147113, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1522923462, 1764322400, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xee646efb5371985892d530cc6efbb7599b7c3ee035fd064efe9d34445661de74"));
+        assert(consensus.hashGenesisBlock == uint256S("0xb24406b393201f2d4521e61434a0e9edecc4f8387c99d4053f9f3fd836a6ac0c"));
         assert(genesis.hashMerkleRoot == uint256S("0x31435675474d3bd3828509aed924f0f1c47fc5ea777a68b787f3e5ded9ce4a52"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
@@ -140,7 +140,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0xee646efb5371985892d530cc6efbb7599b7c3ee035fd064efe9d34445661de74")},
+                {0, uint256S("0x38e649fd986af4931a53f3bfa06248c6247edf3ff0616c0833457601935d7bbd")},
             }
         };
 
@@ -188,7 +188,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000007d006a402163e");
+        consensus.nMinimumChainWork = uint256S("0x0");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0xa0afbded94d4be233e191525dc2d467af5c7eab3143c852c3cd549831022aad6"); //343833
